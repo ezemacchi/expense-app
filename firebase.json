@@ -12,7 +12,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "dist/notion-app-integration/browser/index.html"
+        "destination": "/browser/index.html"
       }
     ]
   }

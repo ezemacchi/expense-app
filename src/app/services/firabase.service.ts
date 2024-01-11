@@ -11,7 +11,7 @@ export class FirebaseService {
 
   private firestore: Firestore = inject(Firestore); // inject Cloud Firestore
 
-  constructor(private http: HttpClient, private store: Firestore) { }
+  constructor() { }
 
   public GetCategories() {
     const categoryCollection = collection(this.firestore, 'categories');

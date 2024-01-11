@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "notion-app-integration"
+  },
+  "targets": {
+    "notion-app-integration": {
+      "hosting": {
+        "notion-app-integration": [
+          "notion-app-integration"
+        ]
+      }
+    }
   }
 }

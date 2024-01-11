@@ -2,18 +2,25 @@
   "database": {
     "rules": "database.rules.json"
   },
-  "hosting": {
-    "public": "dist/notion-app-integration/browser",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "hosting": [
+    {
+      "public": "dist/notion-app-integration/browser",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "notion-app-integration",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
 }

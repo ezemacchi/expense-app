@@ -94,6 +94,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "notion-app-integration:build:production",
+              "serveTarget": "notion-app-integration:serve:production"
+            },
+            "development": {
+              "buildTarget": "notion-app-integration:build:development",
+              "serveTarget": "notion-app-integration:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

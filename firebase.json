@@ -3,7 +3,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "dist/notion-app-integration",
+    "public": "dist/notion-app-integration/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -12,7 +12,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/browser/index.html"
+        "destination": "/index.html"
       }
     ]
   }

@@ -1,9 +1,16 @@
-<p>expenses-form works!</p>
 <form [formGroup]="expenseForm">
-
-    <label for="amount">Amount: </label>
-    <input id="amount" type="number" formControlName="amount">
-  
-    <label for="category">Category: </label>
-    <input id="category" type="text" formControlName="category">
+    <div class="container">
+        <div class="row">
+            <label class="input-group input-group-lg">
+                <input type="number" class="form-control" formControlName="amount" placeholder="Amount">
+            </label>
+        </div>
+        
+        <div class="row">
+            <select class="form-select" formControlName="category">
+                <option value="">Select a category</option>
+                <option *ngFor="let category of categories" [value]="category.id">{{category.CategoryName}}</option>
+            </select>
+        </div>
+    </div>
 </form>

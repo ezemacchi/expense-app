@@ -8,5 +8,4 @@ import { RouterModule } from '@angular/router';
   templateUrl: './expenses.component.html'
 })
 export class ExpensesComponent {
-
 }

@@ -8,9 +8,7 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: 'categories',
-    loadComponent: () =>
-      import('./categories/categories.component').then(
-        (m) => m.CategoriesComponent
-      ),
-  },
+    loadChildren: () =>
+      import('./categories/categories.routes').then((m) => m.CATEGORIES_ROUTES),
+  }
 ];
